@@ -1,0 +1,17 @@
+---
+include:
+    - "**/*.rb"
+    - "vendor/gems/puppet-lint/**/*.rb"
+exclude:
+    - spec/**/*
+    - test/**/*
+    #- vendor/**/*
+    - ".bundle/**/*"
+require: []
+domains: []
+reporters:
+    - rubocop
+    - require_not_found
+require_paths: []
+plugins: []
+max_files: 50000
